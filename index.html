@@ -290,45 +290,160 @@ html{scroll-behavior:smooth}
 
   <!-- Google reviews -->
   <section id="reviews" style="padding: 96px 24px; background: #121110; border-top: 1px solid #2A2418; border-bottom: 1px solid #2A2418">
-    <div style="max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px">
-      <div style="text-align: center; display: flex; flex-direction: column; gap: 10px; align-items: center">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px">
+      <div style="text-align: center; display: flex; flex-direction: column; gap: 10px">
         <span style="font-size: 14px; letter-spacing: 4px; color: #D4AF5F">ביקורות מגוגל</span>
-        <h2 style="margin: 0; font-family: 'Frank Ruhl Libre', serif; font-weight: 700; font-size: 48px; color: #F5EFE2">מה הלקוחות אומרים</h2>
-        <div style="display: flex; align-items: center; gap: 14px; margin-top: 6px">
-          <span style="font-family: 'Frank Ruhl Libre', serif; font-size: 56px; font-weight: 700; color: #D4AF5F; line-height: 1">5.0</span>
-          <span style="display: flex; flex-direction: column; align-items: flex-start"><span style="color: #D4AF5F; font-size: 24px; letter-spacing: 3px">★★★★★</span><span style="color: #A89F8C; font-size: 15px">229 ביקורות ב-Google</span></span>
+        <h2 style="margin: 0; font-family: 'Frank Ruhl Libre', serif; font-weight: 700; font-size: 48px; color: #F5EFE2">מה הלקוחות אומרים עלינו</h2>
+      </div>
+      <div id="reviews-live" style="min-height: 0">
+        <script src="https://elfsightcdn.com/platform.js" async></script>
+        <div class="elfsight-app-4323cd4c-b7e2-424d-85f7-fd49a5656074" data-elfsight-app-lazy></div>
+      </div>
+      <div id="reviews-fallback">
+      <div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: stretch">
+        <div style="flex: 1 1 240px; max-width: 100%; background: #0B0B0B; border: 1px solid #D4AF5F; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 10px; justify-content: center">
+          <div style="display: flex; align-items: center; gap: 12px">
+            <span aria-hidden="true" style="flex: 0 0 48px; height: 48px; border-radius: 50%; background: #000; border: 1.5px solid #D4AF5F; display: flex; align-items: center; justify-content: center; font-family: 'Frank Ruhl Libre', serif; font-weight: 700; color: #D4AF5F; font-size: 20px">S</span>
+            <span style="font-weight: 700; color: #F5EFE2; line-height: 1.3">Shon's Place | מספרת גברים בחדרה</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 10px">
+            <span style="font-family: 'Frank Ruhl Libre', serif; font-size: 34px; font-weight: 700; color: #D4AF5F; line-height: 1">5.0</span>
+            <span role="img" aria-label="5 מתוך 5 כוכבים" style="display: inline-flex; gap: 2px"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg></span>
+          </div>
+          <span style="color: #A89F8C; font-size: 15px">מבוסס על 229 ביקורות ב-Google</span>
+          <a href="https://maps.google.com/?cid=4070493952435956888" style="margin-top: 6px; display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 0 20px; border-radius: 999px; background: #D4AF5F; color: #0B0B0B; font-weight: 700; text-decoration: none">דרגו אותנו בגוגל</a>
+          <a href="https://maps.google.com/?cid=4070493952435956888" style="text-align: center; font-size: 14px">לכל הביקורות ←</a>
+        </div>
+        <div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+          <div id="rv-track" tabindex="0" aria-label="ביקורות לקוחות, גללו לצדדים" style="display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; padding-bottom: 6px; scrollbar-width: thin">
+          <article class="rv-card" style="flex: 0 0 280px; scroll-snap-align: start; background: #0B0B0B; border: 1px solid #2A2418; border-radius: 16px; padding: 22px; display: flex; flex-direction: column; gap: 12px">
+            <div style="display: flex; align-items: center; gap: 12px">
+              <span aria-hidden="true" style="flex: 0 0 44px; height: 44px; border-radius: 50%; background: #1E1A12; border: 1px solid #D4AF5F; color: #D4AF5F; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px">א</span>
+              <div style="display: flex; flex-direction: column; min-width: 0">
+                <span style="font-weight: 700; color: #F5EFE2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">אידו לוי</span>
+                <span style="font-size: 13px; color: #A89F8C">לפני שבוע</span>
+              </div>
+              <span style="margin-inline-start: auto; font-size: 12px; font-weight: 700; color: #A89F8C; border: 1px solid #3A3222; border-radius: 6px; padding: 2px 6px">Google</span>
+            </div>
+            <span role="img" aria-label="5 מתוך 5 כוכבים" style="display: inline-flex; gap: 2px"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg></span>
+            <p style="margin: 0; color: #EDE6D6; font-size: 16px; line-height: 1.6">״יחס אישי, חוויה נעימה… יצאתי מרוצה ללא ספק, אחזור בכל מחיר״</p>
+          </article>
+          <article class="rv-card" style="flex: 0 0 280px; scroll-snap-align: start; background: #0B0B0B; border: 1px solid #2A2418; border-radius: 16px; padding: 22px; display: flex; flex-direction: column; gap: 12px">
+            <div style="display: flex; align-items: center; gap: 12px">
+              <span aria-hidden="true" style="flex: 0 0 44px; height: 44px; border-radius: 50%; background: #1E1A12; border: 1px solid #D4AF5F; color: #D4AF5F; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px">A</span>
+              <div style="display: flex; flex-direction: column; min-width: 0">
+                <span style="font-weight: 700; color: #F5EFE2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">arielbrax</span>
+                <span style="font-size: 13px; color: #A89F8C">לפני 3 שבועות</span>
+              </div>
+              <span style="margin-inline-start: auto; font-size: 12px; font-weight: 700; color: #A89F8C; border: 1px solid #3A3222; border-radius: 6px; padding: 2px 6px">Google</span>
+            </div>
+            <span role="img" aria-label="5 מתוך 5 כוכבים" style="display: inline-flex; gap: 2px"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg></span>
+            <p style="margin: 0; color: #EDE6D6; font-size: 16px; line-height: 1.6">״חבר&#x27;ה צעירים, סופר מקצועיים ועם יחסי אנוש ברמה הכי גבוהה שיש״</p>
+          </article>
+          <article class="rv-card" style="flex: 0 0 280px; scroll-snap-align: start; background: #0B0B0B; border: 1px solid #2A2418; border-radius: 16px; padding: 22px; display: flex; flex-direction: column; gap: 12px">
+            <div style="display: flex; align-items: center; gap: 12px">
+              <span aria-hidden="true" style="flex: 0 0 44px; height: 44px; border-radius: 50%; background: #1E1A12; border: 1px solid #D4AF5F; color: #D4AF5F; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px">Y</span>
+              <div style="display: flex; flex-direction: column; min-width: 0">
+                <span style="font-weight: 700; color: #F5EFE2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Yulia Ioffe</span>
+                <span style="font-size: 13px; color: #A89F8C">לפני חודש</span>
+              </div>
+              <span style="margin-inline-start: auto; font-size: 12px; font-weight: 700; color: #A89F8C; border: 1px solid #3A3222; border-radius: 6px; padding: 2px 6px">Google</span>
+            </div>
+            <span role="img" aria-label="5 מתוך 5 כוכבים" style="display: inline-flex; gap: 2px"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg></span>
+            <p style="margin: 0; color: #EDE6D6; font-size: 16px; line-height: 1.6">״אחלה ספרים. כיף להגיע למספרה, תמיד יוצאים מרוצים מתספורת״</p>
+          </article>
+          <article class="rv-card" style="flex: 0 0 280px; scroll-snap-align: start; background: #0B0B0B; border: 1px solid #2A2418; border-radius: 16px; padding: 22px; display: flex; flex-direction: column; gap: 12px">
+            <div style="display: flex; align-items: center; gap: 12px">
+              <span aria-hidden="true" style="flex: 0 0 44px; height: 44px; border-radius: 50%; background: #1E1A12; border: 1px solid #D4AF5F; color: #D4AF5F; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px">ה</span>
+              <div style="display: flex; flex-direction: column; min-width: 0">
+                <span style="font-weight: 700; color: #F5EFE2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">הרשל&#x27;ה</span>
+                <span style="font-size: 13px; color: #A89F8C">לפני חודש</span>
+              </div>
+              <span style="margin-inline-start: auto; font-size: 12px; font-weight: 700; color: #A89F8C; border: 1px solid #3A3222; border-radius: 6px; padding: 2px 6px">Google</span>
+            </div>
+            <span role="img" aria-label="5 מתוך 5 כוכבים" style="display: inline-flex; gap: 2px"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg></span>
+            <p style="margin: 0; color: #EDE6D6; font-size: 16px; line-height: 1.6">״עברתי ים ספרים בארץ… והספרים שם כל אחד מקצוען״</p>
+          </article>
+          <article class="rv-card" style="flex: 0 0 280px; scroll-snap-align: start; background: #0B0B0B; border: 1px solid #2A2418; border-radius: 16px; padding: 22px; display: flex; flex-direction: column; gap: 12px">
+            <div style="display: flex; align-items: center; gap: 12px">
+              <span aria-hidden="true" style="flex: 0 0 44px; height: 44px; border-radius: 50%; background: #1E1A12; border: 1px solid #D4AF5F; color: #D4AF5F; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px">י</span>
+              <div style="display: flex; flex-direction: column; min-width: 0">
+                <span style="font-weight: 700; color: #F5EFE2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">יניב אלקוסר</span>
+                <span style="font-size: 13px; color: #A89F8C">לפני חודשיים</span>
+              </div>
+              <span style="margin-inline-start: auto; font-size: 12px; font-weight: 700; color: #A89F8C; border: 1px solid #3A3222; border-radius: 6px; padding: 2px 6px">Google</span>
+            </div>
+            <span role="img" aria-label="5 מתוך 5 כוכבים" style="display: inline-flex; gap: 2px"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg></span>
+            <p style="margin: 0; color: #EDE6D6; font-size: 16px; line-height: 1.6">״שירות חם ומקצועי! ממש יודעים לספר ילדים ולדבר לילדים״</p>
+          </article>
+          <article class="rv-card" style="flex: 0 0 280px; scroll-snap-align: start; background: #0B0B0B; border: 1px solid #2A2418; border-radius: 16px; padding: 22px; display: flex; flex-direction: column; gap: 12px">
+            <div style="display: flex; align-items: center; gap: 12px">
+              <span aria-hidden="true" style="flex: 0 0 44px; height: 44px; border-radius: 50%; background: #1E1A12; border: 1px solid #D4AF5F; color: #D4AF5F; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px">א</span>
+              <div style="display: flex; flex-direction: column; min-width: 0">
+                <span style="font-weight: 700; color: #F5EFE2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">אלאייב רחמים</span>
+                <span style="font-size: 13px; color: #A89F8C">לפני חודשיים</span>
+              </div>
+              <span style="margin-inline-start: auto; font-size: 12px; font-weight: 700; color: #A89F8C; border: 1px solid #3A3222; border-radius: 6px; padding: 2px 6px">Google</span>
+            </div>
+            <span role="img" aria-label="5 מתוך 5 כוכבים" style="display: inline-flex; gap: 2px"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg></span>
+            <p style="margin: 0; color: #EDE6D6; font-size: 16px; line-height: 1.6">״אני ממליץ בחום על הספר שי יעקובוב, אחלה ספר, יחס מדהים״</p>
+          </article>
+          <article class="rv-card" style="flex: 0 0 280px; scroll-snap-align: start; background: #0B0B0B; border: 1px solid #2A2418; border-radius: 16px; padding: 22px; display: flex; flex-direction: column; gap: 12px">
+            <div style="display: flex; align-items: center; gap: 12px">
+              <span aria-hidden="true" style="flex: 0 0 44px; height: 44px; border-radius: 50%; background: #1E1A12; border: 1px solid #D4AF5F; color: #D4AF5F; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px">D</span>
+              <div style="display: flex; flex-direction: column; min-width: 0">
+                <span style="font-weight: 700; color: #F5EFE2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">dima orlov</span>
+                <span style="font-size: 13px; color: #A89F8C">לפני 3 חודשים</span>
+              </div>
+              <span style="margin-inline-start: auto; font-size: 12px; font-weight: 700; color: #A89F8C; border: 1px solid #3A3222; border-radius: 6px; padding: 2px 6px">Google</span>
+            </div>
+            <span role="img" aria-label="5 מתוך 5 כוכבים" style="display: inline-flex; gap: 2px"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg></span>
+            <p style="margin: 0; color: #EDE6D6; font-size: 16px; line-height: 1.6">״קיבלו אותי כמו בבית, אנשים איכותיים, חברתיים ומקצועיים״</p>
+          </article>
+          <article class="rv-card" style="flex: 0 0 280px; scroll-snap-align: start; background: #0B0B0B; border: 1px solid #2A2418; border-radius: 16px; padding: 22px; display: flex; flex-direction: column; gap: 12px">
+            <div style="display: flex; align-items: center; gap: 12px">
+              <span aria-hidden="true" style="flex: 0 0 44px; height: 44px; border-radius: 50%; background: #1E1A12; border: 1px solid #D4AF5F; color: #D4AF5F; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px">א</span>
+              <div style="display: flex; flex-direction: column; min-width: 0">
+                <span style="font-weight: 700; color: #F5EFE2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">ארז ימהרן</span>
+                <span style="font-size: 13px; color: #A89F8C">לפני 3 חודשים</span>
+              </div>
+              <span style="margin-inline-start: auto; font-size: 12px; font-weight: 700; color: #A89F8C; border: 1px solid #3A3222; border-radius: 6px; padding: 2px 6px">Google</span>
+            </div>
+            <span role="img" aria-label="5 מתוך 5 כוכבים" style="display: inline-flex; gap: 2px"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg></span>
+            <p style="margin: 0; color: #EDE6D6; font-size: 16px; line-height: 1.6">״צוות ואווירה של החיים… יצאתי מבסוט״</p>
+          </article>
+          <article class="rv-card" style="flex: 0 0 280px; scroll-snap-align: start; background: #0B0B0B; border: 1px solid #2A2418; border-radius: 16px; padding: 22px; display: flex; flex-direction: column; gap: 12px">
+            <div style="display: flex; align-items: center; gap: 12px">
+              <span aria-hidden="true" style="flex: 0 0 44px; height: 44px; border-radius: 50%; background: #1E1A12; border: 1px solid #D4AF5F; color: #D4AF5F; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px">M</span>
+              <div style="display: flex; flex-direction: column; min-width: 0">
+                <span style="font-weight: 700; color: #F5EFE2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Max K</span>
+                <span style="font-size: 13px; color: #A89F8C">לפני 4 חודשים</span>
+              </div>
+              <span style="margin-inline-start: auto; font-size: 12px; font-weight: 700; color: #A89F8C; border: 1px solid #3A3222; border-radius: 6px; padding: 2px 6px">Google</span>
+            </div>
+            <span role="img" aria-label="5 מתוך 5 כוכבים" style="display: inline-flex; gap: 2px"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg></span>
+            <p style="margin: 0; color: #EDE6D6; font-size: 16px; line-height: 1.6">״שון משקיען, מקצוען ובקשב רב לרצון, כל הדרך עם שאלות והכוונה״</p>
+          </article>
+          <article class="rv-card" style="flex: 0 0 280px; scroll-snap-align: start; background: #0B0B0B; border: 1px solid #2A2418; border-radius: 16px; padding: 22px; display: flex; flex-direction: column; gap: 12px">
+            <div style="display: flex; align-items: center; gap: 12px">
+              <span aria-hidden="true" style="flex: 0 0 44px; height: 44px; border-radius: 50%; background: #1E1A12; border: 1px solid #D4AF5F; color: #D4AF5F; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px">צ</span>
+              <div style="display: flex; flex-direction: column; min-width: 0">
+                <span style="font-weight: 700; color: #F5EFE2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">צבע פלוס</span>
+                <span style="font-size: 13px; color: #A89F8C">לפני 6 חודשים</span>
+              </div>
+              <span style="margin-inline-start: auto; font-size: 12px; font-weight: 700; color: #A89F8C; border: 1px solid #3A3222; border-radius: 6px; padding: 2px 6px">Google</span>
+            </div>
+            <span role="img" aria-label="5 מתוך 5 כוכבים" style="display: inline-flex; gap: 2px"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="#D4AF5F"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"></path></svg></span>
+            <p style="margin: 0; color: #EDE6D6; font-size: 16px; line-height: 1.6">״שון אתה תותח… עשית בול מה שרציתי וציפיתי, ומעלה ומעבר״</p>
+          </article>
+          </div>
+          <div style="display: flex; gap: 10px; justify-content: center">
+            <button type="button" id="rv-prev" aria-label="הביקורות הקודמות" style="width: 44px; height: 44px; border-radius: 50%; border: 1.5px solid #D4AF5F; background: #0B0B0B; color: #D4AF5F; cursor: pointer; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"></path></svg></button>
+            <button type="button" id="rv-next" aria-label="הביקורות הבאות" style="width: 44px; height: 44px; border-radius: 50%; border: 1.5px solid #D4AF5F; background: #0B0B0B; color: #D4AF5F; cursor: pointer; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 18l-6-6 6-6"></path></svg></button>
+          </div>
         </div>
       </div>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 20px">
-        <figure style="margin: 0; border: 1px solid #2A2418; border-radius: 16px; padding: 28px; background: #0B0B0B; display: flex; flex-direction: column; gap: 14px">
-          <span style="color: #D4AF5F; letter-spacing: 2px">★★★★★</span>
-          <blockquote style="margin: 0; color: #EDE6D6">״חבר'ה צעירים, סופר מקצועיים ועם יחסי אנוש ברמה הכי גבוהה שיש״</blockquote>
-          <figcaption style="margin-top: auto; color: #A89F8C; font-size: 15px">arielbrax · ביקורת Google</figcaption>
-        </figure>
-        <figure style="margin: 0; border: 1px solid #2A2418; border-radius: 16px; padding: 28px; background: #0B0B0B; display: flex; flex-direction: column; gap: 14px">
-          <span style="color: #D4AF5F; letter-spacing: 2px">★★★★★</span>
-          <blockquote style="margin: 0; color: #EDE6D6">״עברתי ים ספרים בארץ… והספרים שם כל אחד מקצוען״</blockquote>
-          <figcaption style="margin-top: auto; color: #A89F8C; font-size: 15px">הרשל'ה · ביקורת Google</figcaption>
-        </figure>
-        <figure style="margin: 0; border: 1px solid #2A2418; border-radius: 16px; padding: 28px; background: #0B0B0B; display: flex; flex-direction: column; gap: 14px">
-          <span style="color: #D4AF5F; letter-spacing: 2px">★★★★★</span>
-          <blockquote style="margin: 0; color: #EDE6D6">״יחס אישי, חוויה נעימה… יצאתי מרוצה ללא ספק״</blockquote>
-          <figcaption style="margin-top: auto; color: #A89F8C; font-size: 15px">אידו לוי · ביקורת Google</figcaption>
-        </figure>
-        <figure style="margin: 0; border: 1px solid #2A2418; border-radius: 16px; padding: 28px; background: #0B0B0B; display: flex; flex-direction: column; gap: 14px">
-          <span style="color: #D4AF5F; letter-spacing: 2px">★★★★★</span>
-          <blockquote style="margin: 0; color: #EDE6D6">״שירות חם ומקצועי! ממש יודעים לספר ילדים ולדבר לילדים״</blockquote>
-          <figcaption style="margin-top: auto; color: #A89F8C; font-size: 15px">יניב אלקוסר · ביקורת Google</figcaption>
-        </figure>
-        <figure style="margin: 0; border: 1px solid #2A2418; border-radius: 16px; padding: 28px; background: #0B0B0B; display: flex; flex-direction: column; gap: 14px">
-          <span style="color: #D4AF5F; letter-spacing: 2px">★★★★★</span>
-          <blockquote style="margin: 0; color: #EDE6D6">״קיבלו אותי כמו בבית… ממליץ בחום רב על המספרה הזאת!״</blockquote>
-          <figcaption style="margin-top: auto; color: #A89F8C; font-size: 15px">dima orlov · ביקורת Google</figcaption>
-        </figure>
-      </div>
-      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 14px">
-        <a href="https://maps.google.com/?cid=4070493952435956888" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 30px; border-radius: 999px; background: #D4AF5F; color: #0B0B0B; font-weight: 700; font-size: 17px; text-decoration: none">לכל הביקורות בגוגל</a>
-        <a href="https://maps.google.com/?cid=4070493952435956888" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 30px; border-radius: 999px; border: 1.5px solid #D4AF5F; color: #D4AF5F; font-weight: 700; font-size: 17px; text-decoration: none">כתבו לנו ביקורת</a>
+      <p style="margin: 0; text-align: center; font-size: 13px; color: #8A8270">ציטוטים מתוך ביקורות אמיתיות ב-Google</p>
       </div>
     </div>
   </section>
@@ -405,6 +520,19 @@ html{scroll-behavior:smooth}
     var max = parseFloat(v.getAttribute('data-max'));
     v.addEventListener('timeupdate', function () { if (v.currentTime >= max) { v.currentTime = 0; v.play(); } });
   });
+  var track = document.getElementById('rv-track');
+  function step(dir) { if (!track) return; var c = track.querySelector('.rv-card'); var w = c ? c.getBoundingClientRect().width + 16 : 296;
+    var rtl = getComputedStyle(track).direction === 'rtl'; track.scrollBy({ left: (rtl ? -1 : 1) * dir * w, behavior: 'smooth' }); }
+  var pv = document.getElementById('rv-prev'), nx = document.getElementById('rv-next');
+  if (pv) pv.addEventListener('click', function () { step(-1); });
+  if (nx) nx.addEventListener('click', function () { step(1); });
+  (function () {
+    var live = document.querySelector('#reviews-live [class^="elfsight-app-"]'), fb = document.getElementById('reviews-fallback');
+    if (!live || !fb) return;
+    function check() { if (live.offsetHeight > 120) { fb.hidden = true; return true; } return false; }
+    if (window.MutationObserver) { var mo = new MutationObserver(function () { if (check()) mo.disconnect(); }); mo.observe(live, { childList: true, subtree: true, attributes: true }); }
+    window.addEventListener('load', function () { setTimeout(check, 1500); setTimeout(check, 5000); });
+  })();
   var hero = document.getElementById('top'), floats = document.getElementById('floats');
   function onScroll() { if (hero && floats) floats.hidden = hero.getBoundingClientRect().bottom >= 0; }
   window.addEventListener('scroll', onScroll, { passive: true }); window.addEventListener('resize', onScroll); onScroll();
