@@ -33,6 +33,12 @@ html{scroll-behavior:smooth}
   .sp-stat{padding:18px 8px !important}
 }
 [hidden]{display:none !important}
+.sp-hero{min-height:75vh}
+.hero-bg{object-position:center 18%}
+@media (max-width: 700px){.sp-hero{min-height:92vh;min-height:92svh}.hero-bg{object-position:center 30%}}
+.sp-hero-inner p,.sp-hero-inner>a{text-shadow:0 1px 10px rgba(0,0,0,0.85),0 0 2px rgba(0,0,0,0.6)}
+.hero-toggle:focus-visible{outline:2px solid #F0D28F;outline-offset:3px}
+.hero-toggle:hover{background:rgba(11,11,11,0.8)}
 #gallery-single:not([hidden]){display:flex}
 </style>
 </head>
@@ -71,20 +77,20 @@ html{scroll-behavior:smooth}
   </header>
 
   <!-- Hero -->
-  <section id="top" class="sp-hero" style="position: relative; padding: 72px 24px 110px; text-align: center; background: radial-gradient(circle at 50% 0%, #1E1A12 0%, #0B0B0B 65%); border-bottom: 1px solid #2A2418">
-    <div class="sp-hero-inner" style="max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 22px">
-      <h1 style="margin: 0; font-family: 'Frank Ruhl Libre', serif; font-weight: 900; font-size: clamp(42px, 6vw, 76px); line-height: 1.1; color: #F5EFE2">עושים כבוד<br><span style="color: #D4AF5F">לשיער שלך</span></h1>
+  <section id="top" class="sp-hero" style="position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; box-sizing: border-box; padding: 72px 24px 110px; text-align: center; background: radial-gradient(circle at 50% 0%, #1E1A12 0%, #0B0B0B 65%); border-bottom: 1px solid #2A2418">
+  <video class="hero-bg" id="hero-video" src="media/hero-bg.mp4" poster="media/hero-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-hidden="true" tabindex="-1" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; pointer-events: none"></video>
+  <div aria-hidden="true" style="position: absolute; inset: 0; background: rgba(0,0,0,0.45); z-index: 1; pointer-events: none"></div>
+  <button type="button" id="hero-toggle" class="hero-toggle" aria-label="השהיית הסרטון" aria-pressed="false" style="position: absolute; bottom: 16px; left: 16px; z-index: 3; width: 44px; height: 44px; border-radius: 50%; border: 1.5px solid rgba(212,175,95,0.8); background: rgba(11,11,11,0.55); color: #D4AF5F; cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 0">
+    <svg class="ic-pause" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="5" width="4" height="14" rx="1"></rect><rect x="14" y="5" width="4" height="14" rx="1"></rect></svg>
+    <svg class="ic-play" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="display: none"><path d="M8 5v14l11-7z"></path></svg>
+  </button>
+    <div class="sp-hero-inner" style="position: relative; z-index: 2; max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 22px">
+      <h1 style="margin: 0; font-family: 'Frank Ruhl Libre', serif; font-weight: 900; font-size: clamp(42px, 6vw, 76px); line-height: 1.1; color: #F5EFE2; text-shadow: 0 2px 18px rgba(0,0,0,0.55)">עושים כבוד<br><span style="color: #D4AF5F">לשיער שלך</span></h1>
       <p class="sp-hero-lead" style="margin: 0; font-size: 21px; color: #CFC6B2; max-width: 640px">מספרת גברים בלב חדרה – תספורות חדות, פיידים מדויקים ועיצוב זקן ברמה הכי גבוהה. ובנוסף: קורסי ספרות וימי השתלמות.</p>
       <div class="sp-hero-ctas" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 10px">
         <a href="https://app.smartor.co.il/ShonsPlace" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 32px; border-radius: 999px; background: #D4AF5F; color: #0B0B0B; font-weight: 700; font-size: 18px; text-decoration: none">לקביעת תור</a>
         <a href="https://wa.me/972523726089" style="display: inline-flex; align-items: center; gap: 8px; min-height: 52px; padding: 0 32px; border-radius: 999px; border: 1.5px solid #D4AF5F; color: #D4AF5F; font-weight: 700; font-size: 18px; text-decoration: none">שלחו הודעה בוואטסאפ</a>
         <a href="tel:0523726089" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 32px; border-radius: 999px; border: 1.5px solid #D4AF5F; color: #D4AF5F; font-weight: 700; font-size: 18px; text-decoration: none">התקשרו: 052-372-6089</a>
-      </div>
-      <div style="width: min(380px, 82vw); display: flex; flex-direction: column; gap: 10px">
-        <video src="media/hero.mp4#t=0.1" aria-label="סרטון של Shon's Place" title="סרטון של Shon's Place" controls="controls" playsinline="playsinline" preload="metadata" id="hero-video" style="width: 100%; height: auto; aspect-ratio: 2160 / 3868; object-fit: contain; border-radius: 20px; border: 1.5px solid #D4AF5F; background: #000; box-shadow: 0 20px 60px rgba(0,0,0,0.6); display: block">
-          <a href="media/hero.mp4">צפייה בסרטון</a>
-        </video>
-        <p id="video-error" role="alert" hidden style="margin: 0; font-size: 15px; color: #F0D28F">לא ניתן לטעון את הסרטון כרגע. נסו לרענן את הדף.</p>
       </div>
       <a href="https://maps.google.com/?cid=4070493952435956888" style="display: inline-flex; align-items: center; gap: 8px; color: #EDE6D6; text-decoration: none; font-size: 16px"><span style="color: #D4AF5F; letter-spacing: 2px">★★★★★</span> 5.0 בגוגל · 229 ביקורות</a>
       <p style="margin: 6px 0 0; font-size: 15px; color: #A89F8C">הנשיא וייצמן 59, חדרה</p>
@@ -530,8 +536,30 @@ html{scroll-behavior:smooth}
 </div>
 <script>
 (function () {
-  var video = document.getElementById('hero-video'), err = document.getElementById('video-error');
-  if (video && err) video.addEventListener('error', function () { err.hidden = false; });
+  var video = document.getElementById('hero-video'), toggle = document.getElementById('hero-toggle');
+  if (video && toggle) {
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var userPaused = reduce;
+    video.muted = true;
+    function setBtn() {
+      var playing = !video.paused;
+      toggle.setAttribute('aria-label', playing ? 'השהיית הסרטון' : 'המשך הסרטון');
+      toggle.setAttribute('aria-pressed', playing ? 'false' : 'true');
+      toggle.querySelector('.ic-pause').style.display = playing ? '' : 'none';
+      toggle.querySelector('.ic-play').style.display = playing ? 'none' : '';
+    }
+    function tryPlay() { var p = video.play(); if (p && p.catch) p.catch(function () { setBtn(); }); }
+    if (reduce) { video.removeAttribute('autoplay'); video.pause(); }
+    else {
+      if (video.readyState >= 3) tryPlay(); else video.addEventListener('canplay', function once() { video.removeEventListener('canplay', once); if (!userPaused) tryPlay(); });
+      var retry = function () { if (!userPaused && video.paused) tryPlay(); document.removeEventListener('touchstart', retry); document.removeEventListener('click', retry); };
+      document.addEventListener('touchstart', retry, { passive: true }); document.addEventListener('click', retry);
+    }
+    video.addEventListener('play', setBtn); video.addEventListener('pause', setBtn);
+    toggle.addEventListener('click', function (e) { e.stopPropagation(); if (video.paused) { userPaused = false; tryPlay(); } else { userPaused = true; video.pause(); } });
+    document.addEventListener('visibilitychange', function () { if (document.hidden) { if (!video.paused) video.pause(); } else if (!userPaused) tryPlay(); });
+    setBtn();
+  }
   Array.prototype.forEach.call(document.querySelectorAll('video[data-max]'), function (v) {
     var max = parseFloat(v.getAttribute('data-max'));
     v.addEventListener('timeupdate', function () { if (v.currentTime >= max) { v.currentTime = 0; v.play(); } });
