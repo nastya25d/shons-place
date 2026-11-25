@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shonsplace.co.il/sitemap.xml
